@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/totalGoalsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Goals" />
+
+    <EditText
+        android:id="@+id/etGoalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter goal amount:"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/teal_700" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total left to save: 0 Euro"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:textColor="@color/teal_700" />
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transactionsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

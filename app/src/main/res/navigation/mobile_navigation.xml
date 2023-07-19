@@ -1,0 +1,24 @@
+<!-- mobile_navigation.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/blankFragment">
+
+
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.finapp.ui.theme.firstPage.BlankFragment"
+        tools:layout="@layout/fragment_blank" />
+    <fragment
+        android:id="@+id/blankFragment2"
+        android:name="com.example.finapp.ui.theme.secondPage.BlankFragment2"
+        tools:layout="@layout/fragment_blank2" />
+    <fragment
+        android:id="@+id/blankFragment3"
+        android:name="com.example.finapp.ui.theme.thirdPage.BlankFragment3"
+        tools:layout="@layout/fragment_blank3" />
+    <fragment
+        android:id="@+id/blankFragment4"
+        android:name="com.example.finapp.ui.theme.fourthPage.BlankFragment4"
+        tools:layout="@layout/fragment_blank4" />
+</navigation>

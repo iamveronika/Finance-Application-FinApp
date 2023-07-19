@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "680164142509",
+    "project_id": "finapp-ed5c1",
+    "storage_bucket": "finapp-ed5c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680164142509:android:c305f5d63123b75a8b0524",
+        "android_client_info": {
+          "package_name": "com.example.finapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA8QP_8jUlkNZ_wrxIq__bKhdo14ojLnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
