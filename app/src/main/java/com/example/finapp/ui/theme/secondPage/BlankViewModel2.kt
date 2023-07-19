@@ -17,5 +17,3 @@ class BlankViewModel2(private val repository: TransactionsRepository) : ViewMode
         }
     }
 }
-
-

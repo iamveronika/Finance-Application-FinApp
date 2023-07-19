@@ -82,15 +82,15 @@ class BlankFragment4 : Fragment() {
 
             dataList?.forEach { transaction ->
                 if (transaction.category == Category.goal) {
-                    if (transaction.type == TransactionType.INCOME) {
+                    if (transaction.type == TransactionType.OUTCOME) {
                         totalSum += transaction.value.toDouble()
-                    } else if (transaction.type == TransactionType.OUTCOME) {
+                    } else if (transaction.type == TransactionType.INCOME) {
                         totalSum -= transaction.value.toDouble()
                     }
                 }
             }
 
-            totalGoalsButton.text = String.format("Show  Goals (Total Amount: %.2f Euro)", totalSum)
+            totalGoalsButton.text = String.format("Show  Goals (Piggy Bank Amount: %.2f Euro)", totalSum)
             viewModel.getTransactions()
         }
     }

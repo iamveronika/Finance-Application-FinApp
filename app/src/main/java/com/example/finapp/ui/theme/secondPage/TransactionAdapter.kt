@@ -36,7 +36,6 @@ class TransactionAdapter(private val transactions: List<Transaction>) :
         val sdf = SimpleDateFormat("dd/MM/yyyy HH:mm:ss")
         val netDate = Date(transaction.time)
         holder.transactionNameTextView.text = sdf.format(netDate)
-//        holder.transactionNameTextView.text = transaction.time.toString()
         holder.valueTextView.text = "${transaction.value} Euro"
         holder.typeTextView.text = transaction.type.toString()
 

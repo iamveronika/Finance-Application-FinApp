@@ -14,5 +14,3 @@ class TransactionModelFactory(private val repository: TransactionsRepository) :
         throw IllegalArgumentException("Unknown ViewModel class")
     }
 }
-
-

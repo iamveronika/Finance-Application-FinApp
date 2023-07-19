@@ -18,7 +18,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
-class BottomSheetFragment: BottomSheetDialogFragment() {
+class BottomSheetFragment : BottomSheetDialogFragment() {
 
     var callback: BottomSheetCallback? = null
     private lateinit var viewModel: BlankViewModel3
@@ -100,12 +100,14 @@ class BottomSheetFragment: BottomSheetDialogFragment() {
             Toast.makeText(context, "Other is selected", Toast.LENGTH_SHORT).show()
         }
 
-        }
+    }
+
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         return super.onCreateDialog(savedInstanceState).apply {
             setOnShowListener {
                 val bottomSheetDialog = it as BottomSheetDialog
-                val bottomSheet = bottomSheetDialog.findViewById<View>(com.google.android.material.R.id.design_bottom_sheet) as FrameLayout?
+                val bottomSheet =
+                    bottomSheetDialog.findViewById<View>(com.google.android.material.R.id.design_bottom_sheet) as FrameLayout?
 
                 val behavior = BottomSheetBehavior.from(bottomSheet!!)
                 val layoutParams = bottomSheet.layoutParams
@@ -118,4 +120,4 @@ class BottomSheetFragment: BottomSheetDialogFragment() {
             }
         }
     }
-    }
+}

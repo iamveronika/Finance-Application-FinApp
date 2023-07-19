@@ -60,15 +60,11 @@ class BlankFragment2 : Fragment() {
                         totalSum -= value
                     }
                 } catch (e: NumberFormatException) {
-                    Log.e("BlankFragment2", "Error converting transaction value to double", e)
                 }
             }
-            Log.d("BlankFragment2", "Total sum calculated: $totalSum")
-
             val totalSumTextView = requireView().findViewById<TextView>(R.id.totalSumTextView)
             activity?.runOnUiThread {
                 totalSumTextView.text = String.format("Total left: %.2f Euro", totalSum)
-                Log.d("BlankFragment2", "Total sum set to TextView")
             }
         })
         viewModel.getTransactions()
